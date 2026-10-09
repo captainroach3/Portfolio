@@ -45,27 +45,29 @@ const projects: Project[] = [
 </script>
 
 <template>
-  <section id="projects" class="scroll-mt-16 bg-linear-to-b from-deep-teal to-jade text-ink px-6 py-20">
-    <div class="max-w-5xl mx-auto">
-      <p class="text-sm uppercase tracking-widest text-gold mb-2">Projects</p>
-      <h2 class="font-serif text-4xl font-bold text-parchment mb-4">Selected Work</h2>
-      <div class="w-16 h-1 bg-gold mb-10"></div>
+  <section id="projects" class="scroll-mt-16 bg-paper text-charcoal px-6 py-20 border-b-4 border-ink">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,var(--color-ink)_150%)] opacity-[0.08] pointer-events-none">
+    </div>
+    <div class="max-w-5xl mx-auto border-4 border-ink p-8">
+      <p class="font-jp text-sm tracking-widest text-accent-red mb-2">作品 ・ WORKS</p>
+      <h2 class="font-manga text-4xl font-bold uppercase mb-4">Selected Work</h2>
+      <div class="w-16 h-1 bg-accent-red mb-10"></div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
           v-for="project in projects"
           :key="project.id"
-          class="bg-mist border border-gold/30 rounded-lg p-6 transition hover:-translate-y-1 hover:shadow-lg"
+          class="border-4 border-ink p-6 transition-all duration-300 hover:bg-ink hover:text-paper"
         >
-          <p class="text-xs uppercase tracking-wide text-jade mb-1">{{ project.category }}</p>
-          <h3 class="font-serif text-xl font-bold text-deep-teal mb-3">{{ project.title }}</h3>
+          <p class="text-xs uppercase tracking-wide text-accent-red mb-1">{{ project.category }}</p>
+          <h3 class="font-manga text-xl font-bold uppercase mb-3">{{ project.title }}</h3>
           <p class="mb-4 leading-relaxed">{{ project.description }}</p>
 
           <div class="flex flex-wrap gap-2 mb-4">
             <span
               v-for="tech in project.techStack"
               :key="tech"
-              class="bg-deep-teal text-parchment px-3 py-1 rounded-full text-xs"
+              class="border-2 border-ink px-3 py-1 text-xs"
             >
               {{ tech }}
             </span>
@@ -75,7 +77,7 @@ const projects: Project[] = [
             v-if="project.githubLink !== ''"
             :href="project.githubLink"
             target="_blank"
-            class="font-semibold text-deep-teal hover:text-jade"
+            class="font-manga uppercase tracking-wide underline"
           >
             View on GitHub
           </a>

@@ -1,33 +1,47 @@
 <script setup lang="ts">
-const fullName: string = 'Tamang, Dennis'
+import HeroVideo from './HeroVideo.vue'
+
+const fullName: string = 'Dennis Tamang'
 const jobTitle: string = 'Computer Engineering Student'
-const shortIntro: string = 'Welcome to my internet brag sheet.'
+const shortIntro: string = 'I build things with code and hardware.'
 const githubLink: string = 'https://github.com/captainroach3'
 </script>
 
 <template>
-  <section
-    id="home"
-    class="relative overflow-hidden min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-deep-teal via-jade/60 to-deep-teal text-parchment px-6"
-  >
-    
-    <div class="absolute top-20 left-10 w-72 h-72 bg-gold/20 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 right-10 w-96 h-96 bg-jade/30 rounded-full blur-3xl"></div>
+  <section id="home" class="scroll-mt-16 bg-paper text-ink ">
+    <div class="w-screen h-screen flex items-center">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 border-4 border-ink">
+      <div class="h-80 md:h-auto">
+        <HeroVideo />
+      </div>
 
-   
-    <div class="relative z-10 flex flex-col items-center text-center">
-      <p class="text-xl uppercase b tracking-widest text-orange-200 mb-4">Hello, I am</p>
-      <h1 class="font-serif text-5xl md:text-7xl font-bold mb-4">{{ fullName }}</h1>
-      <h2 class="text-2xl text-orange-200 mb-6">{{ jobTitle }}</h2>
-      <div class="w-16 h-1 text-orange-200 mb-6"></div>
-      <p class="text-lg text-mist max-w-xl mb-8">{{ shortIntro }}</p>
-      <a
-        :href="githubLink"
-        target="_blank"
-        class="bg-gold text-deep-teal hover:bg-parchment px-6 py-3 rounded-lg font-semibold"
-      >
-        View my GitHub
-      </a>
+      <div class="absolute bottom-8 right-8 font-jp text-m md:text-2xl font-black text-ink opacity-30 uppercase tracking-widest [writing-mode:vertical-lr]">
+  藤原とうふ店（自家用）
+</div>
+
+
+
+      <div class="p-8 md:p-12">
+        <p class="font-jp text-sm tracking-widest text-charcoal mb-4">ポートフォリオ ・ PORTFOLIO</p>
+        <h1 class="font-manga text-5xl md:text-7xl font-bold leading-none uppercase mb-6">
+          {{ fullName }}
+        </h1>
+        <div class="h-1 w-24 bg-accent-red mb-6"></div>
+        <h2 class="font-manga text-xl md:text-2xl uppercase tracking-wide text-charcoal mb-4">
+          {{ jobTitle }}
+        </h2>
+        <p class="text-lg text-charcoal max-w-xl mb-8 leading-relaxed">
+          {{ shortIntro }}
+        </p>
+        <a
+          :href="githubLink"
+          target="_blank"
+          class="inline-block border-4 border-ink bg-ink text-paper px-8 py-3 font-manga uppercase tracking-wide transition-all duration-300 hover:bg-paper hover:text-ink"
+        >
+          View my GitHub
+        </a>
+      </div>
+    </div>
     </div>
   </section>
 </template>
