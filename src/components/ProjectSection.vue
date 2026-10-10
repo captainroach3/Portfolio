@@ -46,8 +46,6 @@ const projects: Project[] = [
 
 <template>
   <section id="projects" class="scroll-mt-16 bg-paper text-charcoal px-6 py-20 border-b-4 border-ink">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,var(--color-ink)_150%)] opacity-[0.08] pointer-events-none">
-    </div>
     <div class="max-w-5xl mx-auto border-4 border-ink p-8">
       <p class="font-jp text-sm tracking-widest text-accent-red mb-2">作品 ・ WORKS</p>
       <h2 class="font-manga text-4xl font-bold uppercase mb-4">Selected Work</h2>

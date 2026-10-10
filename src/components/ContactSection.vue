@@ -34,7 +34,7 @@ const facebookHref: string = 'https://www.facebook.com/CaptainRoach3'
           </svg>
           <div>
             <p class="text-xs uppercase tracking-wide mb-1">Email</p>
-            <p class="font-semibold">{{ emailValue }}</p>
+            <p class="font-semibold break-all">{{ emailValue }}</p>
           </div>
         </a>
 
@@ -48,7 +48,7 @@ const facebookHref: string = 'https://www.facebook.com/CaptainRoach3'
           </svg>
           <div>
             <p class="text-xs uppercase tracking-wide mb-1">GitHub</p>
-            <p class="font-semibold">{{ githubValue }}</p>
+            <p class="font-semibold break-all">{{ githubValue }}</p>
           </div>
         </a>
 
@@ -62,7 +62,7 @@ const facebookHref: string = 'https://www.facebook.com/CaptainRoach3'
           </svg>
           <div>
             <p class="text-xs uppercase tracking-wide mb-1">Facebook</p>
-            <p class="font-semibold">{{ facebookValue }}</p>
+            <p class="font-semibold break-all">{{ facebookValue }}</p>
           </div>
         </a>
       </div>

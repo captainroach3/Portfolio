@@ -22,8 +22,6 @@ const toolsSkills: string[] = [
 <template>
   <section id="skills" class="scroll-mt-16 bg-ink text-paper px-6 py-20 border-b-4 border-ink">
      <RadialBurst />
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,var(--color-ink)_150%)] opacity-[0.08] pointer-events-none">
-    </div>
     <div class="relative overflow-hidden max-w-5xl mx-auto border-4 border-paper p-8">
       <div v-reveal>
         <p class="font-jp text-sm tracking-widest text-accent-red mb-2">スキル ・ SKILLS</p>

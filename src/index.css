@@ -19,7 +19,6 @@
 
 body {
   background-color: var(--color-paper);
-  background-image: radial-gradient(var(--color-charcoal) 0.6px, transparent 0.6px);
   background-size: 14px 14px;
   background-attachment: fixed;
 }
@@ -76,4 +75,8 @@ html {
     transparent 12px
   );
   opacity: 0.04;
+}
+
+html, body {
+  overflow-x: hidden;
 }

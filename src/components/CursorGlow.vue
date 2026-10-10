@@ -21,8 +21,5 @@ onUnmounted(() => {
 <template>
   <div
     class="pointer-events-none fixed inset-0 z-40 transition-opacity duration-300"
-    :style="{
-      background: `radial-gradient(250px circle at ${mouseX}px ${mouseY}px, rgba(176,30,30,0.08), transparent 20%)`
-    }"
   ></div>
 </template>
