@@ -40,8 +40,6 @@ const quickFacts: QuickFact[] = [
 <template>
   <section id="about" class="relative overflow-hidden scroll-mt-16 bg-sage text-ink border-b-4 border-ink py-20">
     <div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black opacity-[0.07] pointer-events-none mix-blend-multiply"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(var(--color-ink)_1px,transparent_1px)] bg-size-[16px_16px] opacity-[0.05] pointer-events-none"></div>
-    <RadialBurst />
     <div class="max-w-5xl mx-auto border-4 border-ink p-8">
       <p class="font-jp text-sm tracking-widest text-accent-red mb-2">自己紹介 ・ ABOUT</p>
       <h2 class="font-manga text-4xl font-bold uppercase mb-4">Professional Profile</h2>
